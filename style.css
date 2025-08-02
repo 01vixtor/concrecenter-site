@@ -5,159 +5,71 @@ body {
   color: #333;
   text-align: center;
 }
+.topo { background-color: #4b0082; color: white; padding: 20px 0; }
+.topo h1 { margin: 0; font-size: 1.8em; font-weight: bold; }
 
-.topo {
-  background-color: #4b0082;
-  color: white;
-  padding: 20px 0;
-}
-
-.topo h1 {
-  margin: 0;
-  font-size: 2em;
-  font-weight: bold;
-}
-
-section {
-  padding: 50px 20px;
-}
-
-h2 {
-  color: #4b0082;
-  margin-bottom: 20px;
-}
-
-.servicos, .processo, .instagram, .hero, .numeros, .depoimentos, .contato {
-  background: white;
-  margin-top: 10px;
-}
+section { padding: 50px 20px; margin-top: 10px; background: white; }
+h2 { color: #4b0082; margin-bottom: 20px; }
 
 .botoes-servicos button {
-  background-color: #4b0082;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 12px 18px;
-  margin: 8px;
-  font-size: 1em;
-  cursor: pointer;
+  background: #4b0082; color: white; border: none; border-radius: 5px;
+  padding: 12px 18px; margin: 8px; font-size: 1em; cursor: pointer;
   transition: background-color 0.3s;
 }
+.botoes-servicos button:hover { background: #360063; }
 
-.botoes-servicos button:hover {
-  background-color: #360063;
-}
-
-.etapas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-}
-
+.etapas { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
 .etapa {
-  background: #f0f0f0;
-  border-radius: 8px;
-  padding: 15px 20px;
-  font-weight: bold;
-  color: #4b0082;
+  background: #f0f0f0; border-radius: 8px; padding: 15px 20px;
+  font-weight: bold; color: #4b0082;
 }
 
-.numeros {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  background-color: #f9f9f9;
-}
-
+.numeros { display: flex; justify-content: center; gap: 40px; background: #f9f9f9; }
 .bloco-numero h3 {
-  font-size: 2.5em;
-  color: #4b0082;
-  margin: 0;
+  font-size: 2.5em; color: #4b0082; margin: 0;
 }
-
-.bloco-numero p {
-  margin-top: 5px;
-}
+.bloco-numero p { margin-top: 5px; }
 
 .descricao-servico {
-  display: none;
-  max-width: 700px;
-  margin: 30px auto 0;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
+  display: none; max-width: 700px; margin: 30px auto 0;
+  background: white; border: 1px solid #ddd; border-radius: 8px; padding: 20px;
 }
-
-.descricao-servico p {
-  font-size: 1.1em;
-  margin-bottom: 15px;
-  line-height: 1.5;
-}
-
-.btn {
-  display: inline-block;
-  background-color: #4b0082;
-  color: white;
-  padding: 10px 25px;
-  margin-top: 10px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 1em;
-  transition: background-color 0.3s;
-}
-
-.btn:hover {
-  background-color: #360063;
-}
+.descricao-servico p { font-size: 1.1em; margin-bottom: 15px; line-height: 1.5; }
 
 .cards-depoimentos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;
 }
-
 .card {
-  background: white;
-  border-radius: 10px;
-  padding: 20px;
-  width: 250px;
+  background: white; border-radius: 10px; padding: 20px; width: 250px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+.card .estrelas { font-size: 1.2em; color: #fbb034; margin-bottom: 10px; }
+.card p { font-style: italic; margin-bottom: 15px; }
+.card h4 { font-weight: bold; color: #4b0082; margin: 0; }
 
-.card .estrelas {
-  font-size: 1.2em;
-  color: #fbb034;
-  margin-bottom: 10px;
+.form-contato {
+  display: flex; flex-direction: column; align-items: center;
+  max-width: 400px; margin: auto;
 }
+.form-contato input, .form-contato textarea {
+  width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc;
+  border-radius: 5px; font-size: 1em;
+}
+.form-contato button { width: 100%; }
 
-.card p {
-  font-style: italic;
-  margin-bottom: 15px;
-}
+.mapa { margin-top: 30px; }
 
-.card h4 {
-  font-weight: bold;
-  color: #4b0082;
-  margin: 0;
+.btn {
+  display: inline-block; background-color: #4b0082; color: white; padding: 10px 25px;
+  margin-top: 10px; border-radius: 5px; text-decoration: none; font-size: 1em;
+  transition: background-color 0.3s;
 }
+.btn:hover { background-color: #360063; }
 
 footer {
-  background: #4b0082;
-  color: white;
-  padding: 20px;
+  background: #4b0082; color: white; padding: 20px;
 }
-
 footer nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-size: 1em;
+  color: white; text-decoration: none; margin: 0 15px; font-size: 1em;
 }
-
-footer p {
-  margin-top: 10px;
-  font-size: 0.9em;
-}
+footer p { margin-top: 10px; font-size: 0.9em; }
