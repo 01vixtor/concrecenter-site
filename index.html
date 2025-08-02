@@ -12,7 +12,6 @@
     <h1>CONCRECENTER</h1>
   </header>
 
-  <!-- Escolher serviços -->
   <section id="servicos" class="servicos">
     <h2>Escolher serviço</h2>
     <div class="botoes-servicos">
@@ -25,7 +24,6 @@
     <div id="descricao-servico" class="descricao-servico"></div>
   </section>
 
-  <!-- Processo -->
   <section class="processo">
     <h2>Como funciona nosso processo?</h2>
     <div class="etapas">
@@ -37,7 +35,6 @@
     </div>
   </section>
 
-  <!-- Instagram -->
   <section class="instagram">
     <h2>Quer ver nossos projetos recentes?</h2>
     <a href="https://instagram.com/pavers.concrecenter" target="_blank" class="btn">
@@ -45,7 +42,6 @@
     </a>
   </section>
 
-  <!-- Quem somos -->
   <section class="hero">
     <h2>CONCRECENTER — quem somos?</h2>
     <p>
@@ -53,19 +49,17 @@
     </p>
   </section>
 
-  <!-- Contadores -->
   <section class="numeros">
     <div class="bloco-numero">
-      <h3>+150</h3>
+      <h3 id="projetos">0</h3>
       <p>Projetos concluídos</p>
     </div>
     <div class="bloco-numero">
-      <h3>+20</h3>
+      <h3 id="experiencia">0</h3>
       <p>Anos de experiência</p>
     </div>
   </section>
 
-  <!-- Depoimentos -->
   <section id="depoimentos" class="depoimentos">
     <h2>O que nossos clientes dizem</h2>
     <div class="cards-depoimentos">
@@ -92,11 +86,22 @@
     </div>
   </section>
 
-  <!-- Contato -->
   <section id="contato" class="contato">
-    <h2>Fale Conosco</h2>
-    <p>Estamos à disposição para tirar suas dúvidas ou enviar um orçamento.</p>
-    <a href="https://wa.me/5541991973847" class="btn">Solicitar Orçamento</a>
+    <h2>Solicite seu orçamento</h2>
+    <form action="https://formspree.io/f/SEU_ID_AQUI" method="POST" class="form-contato">
+      <input type="text" name="nome" placeholder="Seu nome" required/>
+      <input type="email" name="email" placeholder="Seu e‑mail" required/>
+      <textarea name="mensagem" placeholder="Descreva seu projeto" required></textarea>
+      <button type="submit" class="btn">Enviar orçamento</button>
+    </form>
+
+    <div class="mapa">
+      <h3>Localização</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=..." 
+        width="100%" height="300" style="border:0;" allowfullscreen loading="lazy">
+      </iframe>
+    </div>
   </section>
 
   <footer>
@@ -107,7 +112,8 @@
     <p>&copy; 2025 CONCRECENTER. Todos os direitos reservados.</p>
   </footer>
 
-  <script src="scripts/whatsapp.js"></script>
+  <script src="scripts/contador.js"></script>
   <script src="scripts/interacao.js"></script>
+  <script src="scripts/whatsapp.js"></script>
 </body>
 </html>
