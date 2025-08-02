@@ -1,9 +1,9 @@
 const descricoes = {
-  paver: "Piso intertravado de concreto ideal para calçadas, garagens e áreas externas. Alta resistência e fácil manutenção.",
-  paralelo: "Blocos rústicos para paisagismo e urbanismo com visual tradicional e excelente durabilidade.",
-  ceramicas: "Revestimentos versáteis para ambientes internos e externos com acabamento refinado.",
-  pisos: "Instalação de diversos tipos de pisos com qualidade, nivelamento e resistência.",
-  porcelanato: "Alta resistência e acabamento sofisticado para áreas internas. Ideal para residências e comércios."
+  paralelo: "Blocos rústicos conhecidos como paralelo, ideais para calçadas, passarelas e áreas urbanas. Alta resistência e estilo clássico.",
+  paver: "Piso intertravado de concreto (Paver), perfeito para calçadas, garagens e áreas externas, com excelente durabilidade e manutenção prática.",
+  ceramicas: "Cerâmicas adequadas para ambientes internos e externos, com acabamento refinado e grande variedade de modelos.",
+  pisos: "Serviço de instalação de diversos tipos de piso, com nivelamento preciso e acabamento profissional.",
+  porcelanato: "Porcelanato de alta resistência e acabamento sofisticado, ideal para residências e comércios exigentes."
 };
 
 function mostrarDescricao(servico) {
