@@ -9,62 +9,27 @@ body {
 .topo {
   background-color: #4b0082;
   color: white;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .topo h1 {
   margin: 0;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: bold;
 }
 
-.hero, .processo, .numeros, .instagram, .servicos, .depoimentos, .contato {
+section {
   padding: 50px 20px;
 }
 
-.hero h2, .processo h2, .servicos h2, .depoimentos h2, .instagram h2, .contato h2 {
+h2 {
   color: #4b0082;
   margin-bottom: 20px;
 }
 
-.hero p {
-  font-size: 1.1em;
-  max-width: 800px;
-  margin: auto;
-  line-height: 1.6;
-}
-
-.etapas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-}
-
-.etapa {
-  background: #f0f0f0;
-  border-radius: 8px;
-  padding: 15px 20px;
-  font-weight: bold;
-  color: #4b0082;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
-.numeros {
-  background-color: #f9f9f9;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-
-.bloco-numero h3 {
-  font-size: 2.5em;
-  color: #4b0082;
-  margin: 0;
-}
-
-.bloco-numero p {
-  margin: 5px 0 0;
+.servicos, .processo, .instagram, .hero, .numeros, .depoimentos, .contato {
+  background: white;
+  margin-top: 10px;
 }
 
 .botoes-servicos button {
@@ -83,10 +48,42 @@ body {
   background-color: #360063;
 }
 
+.etapas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.etapa {
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 15px 20px;
+  font-weight: bold;
+  color: #4b0082;
+}
+
+.numeros {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background-color: #f9f9f9;
+}
+
+.bloco-numero h3 {
+  font-size: 2.5em;
+  color: #4b0082;
+  margin: 0;
+}
+
+.bloco-numero p {
+  margin-top: 5px;
+}
+
 .descricao-servico {
   display: none;
   max-width: 700px;
-  margin: 30px auto;
+  margin: 30px auto 0;
   background: white;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -95,12 +92,24 @@ body {
 
 .descricao-servico p {
   font-size: 1.1em;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   line-height: 1.5;
 }
 
-.depoimentos {
-  background-color: #f0f0f0;
+.btn {
+  display: inline-block;
+  background-color: #4b0082;
+  color: white;
+  padding: 10px 25px;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #360063;
 }
 
 .cards-depoimentos {
@@ -116,7 +125,6 @@ body {
   padding: 20px;
   width: 250px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
 }
 
 .card .estrelas {
@@ -136,26 +144,10 @@ body {
   margin: 0;
 }
 
-.btn {
-  display: inline-block;
-  background-color: #4b0082;
-  color: white;
-  padding: 10px 25px;
-  margin-top: 10px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 1em;
-  transition: background-color 0.3s;
-}
-
-.btn:hover {
-  background-color: #360063;
-}
-
 footer {
   background: #4b0082;
   color: white;
-  padding: 30px 20px;
+  padding: 20px;
 }
 
 footer nav a {
@@ -163,10 +155,9 @@ footer nav a {
   text-decoration: none;
   margin: 0 15px;
   font-size: 1em;
-  font-weight: bold;
 }
 
 footer p {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 0.9em;
 }
