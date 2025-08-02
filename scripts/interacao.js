@@ -11,6 +11,6 @@ function mostrarDescricao(servico) {
   container.style.display = "block";
   container.innerHTML = `
     <p>${descricoes[servico]}</p>
-    <a href="https://wa.me/5541991973847" class="btn">Solicitar orçamento</a>
+    <a href="https://wa.me/5541991973847" class="btn">Solicitar Orçamento</a>
   `;
 }
