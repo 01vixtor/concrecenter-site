@@ -1,58 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ConcreCenter Pavimentos</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>CONCRECENTER</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
-    <img src="assets/logo.png" alt="Logo ConcreCenter" class="logo"/>
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#contato">Contato</a>
-    </nav>
+
+  <header class="topo">
+    <h1>CONCRECENTER</h1>
   </header>
 
   <section class="hero">
-    <h1>Pavimentos Intertravados com Qualidade e Eficiência</h1>
-    <p>Atendemos Curitiba e região com projetos profissionais e duradouros.</p>
-    <a href="https://wa.me/5541991973847" class="btn">Solicitar Orçamento</a>
+    <h2>CONCRECENTER — quem somos?</h2>
+    <p>
+      A <strong>CONCRECENTER</strong> é uma empresa especializada na venda, instalação e manutenção de pisos de concreto intertravados conhecidos como Paver.<br/>
+      Com uma grande variedade de cores, formatos e texturas, o Paver é o piso ideal para áreas externas, garantindo versatilidade e durabilidade em sua instalação.<br/>
+      Nossa equipe está pronta para avaliar cada projeto com atenção personalizada, atuando com seriedade, pontualidade e qualidade, o que nos torna referência em atendimento.
+    </p>
   </section>
 
-  <section id="sobre" class="sobre">
-    <h2>Sobre a ConcreCenter</h2>
-    <p>Com anos de experiência no mercado de pavimentação, a ConcreCenter entrega obras com excelência, profissionalismo e pontualidade.</p>
+  <section class="processo">
+    <h2>Como funciona nosso processo?</h2>
+    <div class="etapas">
+      <div class="etapa">📞 Contato</div>
+      <div class="etapa">📍 Visita técnica</div>
+      <div class="etapa">💰 Orçamento</div>
+      <div class="etapa">🔧 Execução</div>
+      <div class="etapa">✅ Conclusão</div>
+    </div>
   </section>
 
-  <section id="servicos" class="servicos">
-    <h2>Serviços</h2>
-    <ul>
-      <li>Pavimento intertravado</li>
-      <li>Calçadas e estacionamentos</li>
-      <li>Bloquetes e pavers</li>
-      <li>Projetos residenciais e comerciais</li>
-    </ul>
+  <section class="numeros">
+    <div class="bloco-numero">
+      <h3>+150</h3>
+      <p>Projetos concluídos</p>
+    </div>
+    <div class="bloco-numero">
+      <h3>+20</h3>
+      <p>Anos de experiência</p>
+    </div>
   </section>
 
   <section class="instagram">
-    <h2>Quer ver nossos projetos?</h2>
-    <p>Clique no botão abaixo e veja fotos atualizadas diretamente no nosso Instagram.</p>
-    <a href="https://www.instagram.com/pavers.concrecenter" target="_blank" class="btn">Ver no Instagram</a>
+    <h2>Quer ver nossos projetos recentes?</h2>
+    <a href="https://instagram.com/pavers.concrecenter" target="_blank" class="btn">Clique aqui e vá para nosso Instagram</a>
+  </section>
+
+  <section id="servicos" class="servicos">
+    <h2>Escolher serviço</h2>
+    <div class="botoes-servicos">
+      <button onclick="mostrarDescricao('paralelo')">Paralelo</button>
+      <button onclick="mostrarDescricao('paver')">Paver</button>
+      <button onclick="mostrarDescricao('ceramicas')">Cerâmicas</button>
+      <button onclick="mostrarDescricao('pisos')">Pisos</button>
+      <button onclick="mostrarDescricao('porcelanato')">Porcelanato</button>
+    </div>
+    <div id="descricao-servico" class="descricao-servico"></div>
+  </section>
+
+  <section id="depoimentos" class="depoimentos">
+    <h2>O que nossos clientes dizem</h2>
+    <div class="cards-depoimentos">
+      <div class="card">
+        <p class="estrelas">⭐⭐⭐⭐⭐</p>
+        <p>"Serviço excelente! Entregaram antes do prazo e com muita qualidade."</p>
+        <h4>Lucas Andrade</h4>
+      </div>
+      <div class="card">
+        <p class="estrelas">⭐⭐⭐⭐⭐</p>
+        <p>"Atendimento incrível desde o orçamento até a finalização. Recomendo 100%!"</p>
+        <h4>Marina Costa</h4>
+      </div>
+      <div class="card">
+        <p class="estrelas">⭐⭐⭐⭐⭐</p>
+        <p>"Empresa séria, organizada e com um acabamento impecável no serviço."</p>
+        <h4>Renato Vieira</h4>
+      </div>
+      <div class="card">
+        <p class="estrelas">⭐⭐⭐⭐⭐</p>
+        <p>"Ficou muito melhor do que eu imaginava. Preço justo e ótimo atendimento!"</p>
+        <h4>Fernanda Lima</h4>
+      </div>
+    </div>
   </section>
 
   <section id="contato" class="contato">
     <h2>Fale Conosco</h2>
-    <p>Nos chame no WhatsApp para tirar dúvidas ou pedir um orçamento.</p>
-    <a href="https://wa.me/5541991973847" class="btn">Abrir WhatsApp</a>
+    <p>Estamos à disposição para tirar suas dúvidas ou enviar um orçamento.</p>
+    <a href="https://wa.me/5541991973847" class="btn">Solicitar Orçamento</a>
   </section>
 
   <footer>
-    <p>&copy; 2025 ConcreCenter Pavimentos. Todos os direitos reservados.</p>
+    <nav>
+      <a href="#hero">Quem somos?</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <p>&copy; 2025 CONCRECENTER. Todos os direitos reservados.</p>
   </footer>
 
   <script src="scripts/whatsapp.js"></script>
+  <script src="scripts/interacao.js"></script>
 </body>
 </html>
