@@ -3,63 +3,80 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background: #f9f9f9;
   color: #333;
+  text-align: center;
 }
 
 .topo {
   background-color: #4b0082;
   color: white;
-  padding: 20px;
-  text-align: center;
+  padding: 30px 0;
 }
 
 .topo h1 {
   margin: 0;
-  font-size: 2.2em;
+  font-size: 2.5em;
   font-weight: bold;
 }
 
-.hero {
-  text-align: center;
-  padding: 60px 20px;
+.hero, .processo, .numeros, .instagram, .servicos, .depoimentos, .contato {
+  padding: 50px 20px;
+}
+
+.hero h2, .processo h2, .servicos h2, .depoimentos h2, .instagram h2, .contato h2 {
+  color: #4b0082;
+  margin-bottom: 20px;
 }
 
 .hero p {
-  font-size: 1.2em;
-  margin-bottom: 15px;
-}
-
-.btn {
-  background-color: #4b0082;
-  color: white;
-  padding: 10px 25px;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 15px;
-  display: inline-block;
-}
-
-section {
-  padding: 50px 20px;
-  max-width: 900px;
+  font-size: 1.1em;
+  max-width: 800px;
   margin: auto;
+  line-height: 1.6;
 }
 
-.sobre, .contato {
-  text-align: center;
+.etapas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
 
-.servicos {
-  text-align: center;
+.etapa {
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 15px 20px;
+  font-weight: bold;
+  color: #4b0082;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.numeros {
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.bloco-numero h3 {
+  font-size: 2.5em;
+  color: #4b0082;
+  margin: 0;
+}
+
+.bloco-numero p {
+  margin: 5px 0 0;
 }
 
 .botoes-servicos button {
   background-color: #4b0082;
   color: white;
-  padding: 10px 20px;
-  margin: 10px 5px;
   border: none;
   border-radius: 5px;
+  padding: 12px 18px;
+  margin: 8px;
+  font-size: 1em;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .botoes-servicos button:hover {
@@ -67,33 +84,89 @@ section {
 }
 
 .descricao-servico {
-  margin-top: 30px;
-  padding: 20px;
-  background: #fff;
+  display: none;
+  max-width: 700px;
+  margin: 30px auto;
+  background: white;
   border: 1px solid #ddd;
   border-radius: 8px;
-  display: none;
+  padding: 20px;
 }
 
 .descricao-servico p {
-  font-size: 1em;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.depoimentos {
+  background-color: #f0f0f0;
+}
+
+.cards-depoimentos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card .estrelas {
+  font-size: 1.2em;
+  color: #fbb034;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-style: italic;
   margin-bottom: 15px;
+}
+
+.card h4 {
+  font-weight: bold;
+  color: #4b0082;
+  margin: 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #4b0082;
+  color: white;
+  padding: 10px 25px;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #360063;
 }
 
 footer {
   background: #4b0082;
   color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-footer nav {
-  margin-bottom: 10px;
+  padding: 30px 20px;
 }
 
 footer nav a {
-  margin: 0 10px;
   color: white;
   text-decoration: none;
+  margin: 0 15px;
+  font-size: 1em;
   font-weight: bold;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 0.9em;
 }
